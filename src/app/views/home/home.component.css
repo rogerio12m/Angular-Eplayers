@@ -1,0 +1,138 @@
+
+/* banner */
+
+.banner {
+    width: 100%; /* não precisaria!! */
+    height: 600px;
+    background-image: url(/assets/images/banner_pilotos.png);
+    background-repeat: no-repeat;
+}
+
+.banner .banner-info-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 600px;
+}
+
+.banner .banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 250px;
+}
+
+.banner .banner-info .info-title {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "TitilliumWeb-SemiBold";
+}
+
+.banner .banner-info .info-text {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Roboto-Light";
+    margin-top: -50px;
+}
+
+.banner .banner-info .info-link {
+   border-radius: 10px;
+   border: 1px solid #E71A3F;
+   width: 250px;
+   background-color: #E71A3F;
+   color: white;
+   text-transform: uppercase;
+   text-decoration: none;
+   height: 45px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: "Roboto-Bold";
+}
+
+/* patrocinadores */
+
+.patrocinados {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1E1C21;
+}
+
+.patrocinados-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CUSTOMIZAÇÃO GERAL DO BOOTSTRAP */
+
+.container {
+    max-width: 1200px;
+}
+
+/* PRODUTOS */
+
+.produtos {
+    background-color: #1E1C21;
+    color: white;
+    padding: 30px 0;
+}
+
+.produtos h2 {
+    font-family: "Roboto-Medium";
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.card {
+    max-width: 230px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to bottom, #000000, #1E1C21);
+}
+
+.card .card-title {
+    font-family: "Roboto-Medium";
+    text-transform: uppercase;
+}
+
+.card .card-price {
+    font-size: 1.4rem;
+    font-family: "Roboto-Medium";
+}
+
+.card .card-text {
+    font-family: "Roboto-Medium";
+}
+
+.card .btn-primary {
+    background-color: #C31616;
+    width: 100%;
+    border-color: #C31616;
+    font-family: "Roboto-Medium";
+    text-transform: uppercase;
+}
+
+/* BREAKPOINTS */
+/* 
+    celulares 0 - 767px
+    tablets 768 - 991px
+    desktop >= 992px - 1199px
+    telas grandes >= 1200px - 1920px
+*/
+   
+/* TABLETS */
+@media all and (max-width: 991px) {
+    .patrocinados {
+        display: none;
+    }
+}
+
+/* SMARTPHONES */
+@media all and (max-width: 767px) {
+
+}

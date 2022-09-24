@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "name": "Eduardo Mendes da Costa",
+      "email": "edu@edu.com",
+      "password": "$2a$10$In7.xCRXz/gq7uOTnP4xB.5ym2.ctpLqxMTuFSV.dyfDC24nOzz3e",
+      "id": 1
+    },
+    {
+      "email": "maria@yahoo.com",
+      "password": "$2a$10$H7WummyUvnWFGRODREEcMeddwnNtOOKrx.jRD0zbns17QHA26op/e",
+      "id": 2
+    },
+    {
+      "email": "rogerio@rogerio.com",
+      "password": "$2a$10$.L2.k8tnHB59KPWsnNMW2.XXgdQIde5I9uxzQkHKM2V05cm0/COnq",
+      "id": 3
+    }
+  ]
+}

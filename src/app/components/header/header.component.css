@@ -1,0 +1,102 @@
+.header-flex { /*flex container */
+    display: flex;
+    height: 85px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #1E1C21;
+}
+
+header .logo {
+    width: 280px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+header .menu a {
+    font-family: "Roboto-Light";
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .menu-bars {
+    display: none;
+}
+
+/* TABLETS */
+@media all and (max-width: 991px) {
+    header .logo {
+        width: 230px;
+        margin-left: 15px;
+    }
+
+    header .menu {
+        position: fixed;
+        top: 0;
+        left: -80%;
+        width: 80%;
+        height: 100%;
+        z-index: 10;
+        opacity: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        padding: 20px 50px;
+        background-color: rgba(195, 22, 22, 0.95);
+        border-radius: 0 0 0 90px;
+        transition: left 0.4s, opacity 0.5s;
+    }
+
+    header .menu a {
+        margin-bottom: 20px;
+        border-left: 3px dotted #AAB0AE;
+        padding: 20px;
+        font-size: 1.4rem;
+        color: #AAB0AE;
+    }
+
+    header .menu-bars {
+        display: block;
+        width: 45px;
+        margin-right: 15px;
+        color: white;
+    }
+
+    .mostraEscondeMenu {
+        left: 0 !important;
+        opacity: 1 !important;
+    }
+
+}
+
+/* SMARTPHONES */
+@media all and (max-width: 767px) {
+
+    .header-flex {
+        height: 65px;
+    }
+
+    header .menu-bars {
+        width: 25px;
+    }
+
+    header .logo {
+        width: 180px;
+    }
+
+    header .menu a {
+        margin-bottom: 10px;
+        border-left: 2px dotted #AAB0AE;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
